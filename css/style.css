@@ -1,0 +1,9 @@
+#header{
+  background-color: #5b7989;
+  border-radius: 10px;
+}
+#header h1{
+  text-align: left;
+  text-shadow: 2px 0px 0px #02010a;
+  color: white;
+}
