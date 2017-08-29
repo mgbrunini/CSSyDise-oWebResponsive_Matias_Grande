@@ -18,17 +18,28 @@ header h1{
   color: white;
 }
 .central{
-  width: 100%;
-  background-color: #82c3a6;
+  width: 80%; 
 }
 .media{
   width: 50%;
+  height: 50%;
   float: left;
   border: 1px solid;
-  margin-left: 0px;
 }
 .media2{
   width: 50%;
+  height: 50%;
   float: right;
   border: 1px solid;
+}
+#uno{
+  background: #82c3a6;
+}
+#dos {
+  background: #d5c75f;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.media {
+
 }
