@@ -18,7 +18,11 @@ header h1{
   color: white;
 }
 .central{
-  width: 80%; 
+  position: relative;
+  height: auto;
+  width: 80%;
+  left: 50%;
+  right: 50%;
 }
 .media{
   width: 50%;
