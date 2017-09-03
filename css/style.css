@@ -3,20 +3,28 @@ body{
   font-family: 'Dancing Script', cursive;
 }
 .cabecera {
+  padding: 6px;
   background: #5b7989;
   border-radius: 10px;
 }
 .cabecera h1 {
   text-shadow: 2px 0px 0px #02010a;
+  color: white;}
+a{
   color: white;
 }
-.m {
-  margin-right: 3%;
-  display: inline;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.m{
+list-style-type:none;
+text-align:right;
+font-size:16px;
+margin-top:-50px;
+margin-right:20px;
+}
+.m li{
+display:inline;
+text-align:center;
+margin:0 10px 0 0;
+font-size:22px;
 }
 ul{
 list-style-type: none;
@@ -26,7 +34,9 @@ img {
 }
 .centro{
   background: #82c3a6;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .centro img{
   width: 70%;
