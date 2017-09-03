@@ -1,49 +1,42 @@
 body{
-  background-color: #02010a;
-  font-family: Dancing Script;
+  background: #02010a;
+  font-family: 'Dancing Script', cursive;
 }
-header {
-  padding: 45px 10px;
+.cabecera {
   background: #5b7989;
+  background-osition: 100%;
   border-radius: 10px;
 }
-header h1{
-  float: left;
+.cabecera h1 {
   text-shadow: 2px 0px 0px #02010a;
   color: white;
-  margin-top: -18px;
 }
-#menu{
+.m {
   float: right;
-  color: white;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-.central{
-  position: relative;
-  height: auto;
-  width: 80%;
-  left: 50%;
-  right: 50%;
+ul{
+list-style-type: none;
 }
-.media{
-  width: 50%;
-  height: 50%;
-  float: left;
-  border: 1px solid;
-}
-.media2{
-  width: 50%;
-  height: 50%;
-  float: right;
-  border: 1px solid;
-}
-#uno{
+.centro{
   background: #82c3a6;
+  margin: 0 auto;
 }
-#dos {
-  background: #d5c75f;
-  display: flex;
-  flex-wrap: nowrap;
+.centro img{
+  width: 70%;
+  margin: 0 auto;
 }
-.media {
-
+@media (max-width: 899px) {
+  .contenido{
+    width: 100%;
+  }
+}
+@media (min-width: 900px) {
+  .contenido{
+    width: 900px;
+  }
 }
