@@ -4,7 +4,6 @@ body{
 }
 .cabecera {
   background: #5b7989;
-  background-osition: 100%;
   border-radius: 10px;
 }
 .cabecera h1 {
@@ -12,8 +11,8 @@ body{
   color: white;
 }
 .m {
-  float: right;
-  display: block;
+  margin-right: 3%;
+  display: inline;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -21,6 +20,9 @@ body{
 }
 ul{
 list-style-type: none;
+}
+img {
+  box-shadow: 2px 0px 0px #02010a;
 }
 .centro{
   background: #82c3a6;
