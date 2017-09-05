@@ -31,16 +31,43 @@ list-style-type: none;
 }
 img {
   box-shadow: 2px 0px 0px #02010a;
+  width: 400px;
+  height: 241px;
 }
 .centro{
   background: #82c3a6;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  border: 1px;
+  display: flex;
 }
 .centro img{
-  width: 70%;
-  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border:none;
+}
+.duplicado {
+  background: #d5c75f;
+  border: 1px;
+  display: flex;
+  flex-flow: row;
+}
+.duplicado figcaption{
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+.izq{
+  margin: 1rem;
+  padding: 4rem;
+}
+.izq img :hover{
+  transition: all 2s ease-in-out;
+  transform: rotate(720deg) scale(2,2);
+  normal
+}
+.der{
+  margin: 1rem;
+  padding: 4rem;
 }
 @media (max-width: 899px) {
   .contenido{
