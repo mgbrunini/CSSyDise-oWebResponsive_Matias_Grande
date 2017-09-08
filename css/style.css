@@ -43,7 +43,11 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 10 px;
+  padding-bottom: 10 px;
   border:none;
+  width: 70%;
+  height: 70%;
 }
 .duplicado {
   background: #d5c75f;
@@ -53,21 +57,55 @@ img {
 }
 .duplicado figcaption{
   text-align: center;
-  color: white;
   font-size: 22px;
 }
 .izq{
   margin: 1rem;
   padding: 4rem;
 }
-.izq img :hover{
-  transition: all 2s ease-in-out;
-  transform: rotate(720deg) scale(2,2);
-  normal
+.izq img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 0px 0px #82c3a6;
+  transition: transform 2s;
 }
 .der{
   margin: 1rem;
   padding: 4rem;
+}
+.der img:hover{
+  transform: translate(20px , -5px);
+  box-shadow: 2px 0px 0px #82c3a6;
+  transition: transform 2s;
+}
+#pie {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #C6d5c5;
+  text-emphasis-color: black;
+  display: flex;
+  width: 100%;
+	flex-flow: row wrap;
+}
+#pie img{
+  width: 30px;
+  height: 30px;
+  box-shadow: none;
+}
+#pie div {
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+.contacto{
+  width: 25%;
+}
+.termino{
+  width: 25%;
+}
+.redes{
+  width: 25%;
+}
+.derechos{
+  width: 20%;
 }
 @media (max-width: 899px) {
   .contenido{
