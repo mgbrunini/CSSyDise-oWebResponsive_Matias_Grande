@@ -15,64 +15,49 @@ a{
 }
 .m{
 list-style-type:none;
-text-align:right;
 font-size:16px;
-margin-top:-50px;
 margin-right:20px;
 }
 .m li{
-display:inline;
+display: inline;
 text-align:center;
 margin:0 10px 0 0;
 font-size:22px;
 }
-ul{
-list-style-type: none;
-}
 img {
   box-shadow: 2px 0px 0px #02010a;
-  wdth: 400px;
-  hight: 241px;
 }
 .centro{
   background: #82c3a6;
   border: 1px;
   display: flex;
 }
-.centro img{
+.centro figure {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: 80%;
+  text-align: center;
+  width: 100%;
 }
 .duplicado {
   background: #d5c75f;
   border: 1px;
-  display: flex;
-  flex-flow: row;
+
 }
-.duplicado figcaption{
-  text-align: center;
-  font-size: 22px;
-}
-.izq{
-  mrgin: 1rem;
-  pdding: 4rem;
+.duplicado img{
+  width: 80%;
 }
 .izq img:hover{
   transform: rotate(10deg);
   box-shadow: 2px 0px 0px #82c3a6;
   transition: transform 2s;
 }
-.der{
-  mrgin: 1rem;
-  pdding: 4rem;
-}
 .der img:hover{
   transform: translate(20px , -5px);
   box-shadow: 2px 0px 0px #82c3a6;
   transition: transform 2s;
+}
+.duplicado figcaption{
+  text-align: center;
+  font-size: 22px;
 }
 #pie {
   border-bottom-right-radius: 10px;
@@ -81,41 +66,89 @@ img {
   text-emphasis-color: black;
   display: flex;
   width: 100%;
-	flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 #pie img{
-  width: 30px;
-  height: 30px;
+  display: block;
   box-shadow: none;
 }
+#pie p{
+  display: inline;
+}
 #pie div {
+  display: block;
   margin-left: 10px;
-  box-sizing: border-box;
   align-items: center;
-}
-.contacto{
-  width: 24%;
-}
-.termino{
-  width: 24%;
-}
-.redes{
-  width: 24%;
-}
-.derechos{
-  width: 24%;
 }
 @media (max-width: 899px) {
   .contenido{
     width: 100%;
   }
+  .centro img{
+    width: 90%;
+  }
   .m{
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+  }
+  .duplicado{
+    margin-top: -17px;
+  }
+  .izq img{
+    margin-top: 10px;
+    width: 100%;
+    order: 1;
+  }
+  .der img{
+    width: 100%;
+    order: 2;
+  }
+  #pie{
+    margin-top: -17px;
+  }
+  .contacto{
+    order: 1;
+  }
+  .termino{
+    order: 2;
+  }
+  .redes{
+    order: 3;
+  }
+  .derechos{
+    order: 4;
   }
 }
 @media (min-width: 900px) {
   .contenido{
     width: 900px;
+  }
+  .m{
+    text-align:right;
+    margin-top:-50px;
+  }
+  ul{
+  list-style-type: none;
+  }
+  .duplicado{
+    display: flex;
+    flex-flow: row;
+  }
+  .izq{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contacto{
+    width: 24%;
+  }
+  .termino{
+    width: 24%;
+  }
+  .redes{
+    width: 24%;
+  }
+  .derechos{
+    width: 24%;
   }
 }
