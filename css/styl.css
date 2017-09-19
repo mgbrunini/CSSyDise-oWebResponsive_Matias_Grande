@@ -6,6 +6,7 @@ body{
   padding: 6px;
   background: #5b7989;
   border-radius: 10px;
+  animation: slidein 1s;
 }
 .cabecera h1 {
   text-shadow: 2px 0px 0px #02010a;
@@ -40,7 +41,6 @@ img {
 .duplicado {
   background: #d5c75f;
   border: 1px;
-
 }
 .duplicado img{
   width: 80%;
@@ -80,6 +80,34 @@ img {
   margin-left: 10px;
   align-items: center;
 }
+.color{
+  background: #d5c75f;
+  border: 1px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  display: fle;
+}
+.arriba img{
+  margin-top: 20px;
+  }
+  .e1{
+    filter: blur(10px);
+  }
+  .e2{
+    filter: grayscale(100%);
+  }
+  .e3{
+    filter: sepia(90%);
+  }
+  .arriba img{
+    width: 90%;
+  }
+  .abajo img{
+    width: 90%;
+  }
+  .abajo img{
+    margin-bottom: 20px;
+  }
 @media (max-width: 899px) {
   .contenido{
     width: 100%;
@@ -139,6 +167,16 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  .der{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .izq img{
+    width: 100%;
+  }
+  .der img{
+    width: 100%;
+  }
   .contacto{
     width: 24%;
   }
@@ -150,5 +188,23 @@ img {
   }
   .derechos{
     width: 24%;
+  }
+  .arriba {
+    display: inline-flex;
+  }
+  .abajo{
+    display: inline-flex;
+
+  }
+}
+@-webkit-keyframes slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
   }
 }
